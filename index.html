@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Sly Media</title>
+    <link rel="icon" type="image/x-icon" href="/Users/samuellyo/Desktop/SLY MEDIA SITE/slyicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+     /*  html {
+            cursor: none;
+            height: 100%;
+        }
+    */
+    </style>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <style>
+        html, body {
+            min-height: 100%;
+            margin: 0;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+    body {
+        margin: 0;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        font-family: 'Inter', sans-serif;
+        flex-direction: column;
+        padding-bottom: 2em;
+    }
+
+    .center-content img {
+        max-width: 26em;
+        height: auto;
+        display: block;
+        /*margin: 0 auto;*/
+        margin-top: 8em;
+    }
+    
+
+    .brand-logo {
+        text-align: center;
+        font-weight: 600;
+        letter-spacing: -0.057em;
+        font-size: 6.5rem;
+        margin-top: 0rem;
+    }
+
+    .slogan {
+        font-weight: 600;
+        letter-spacing: -0.057em;
+        font-size: 2rem;
+        margin-top: -3rem;
+        width: 16em;
+    }
+
+    .center-content img,
+    .slogan, .nav-inline, .box-links,
+    .brand-logo {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 1.5s forwards;
+    }
+
+    .brand-logo {
+        animation-delay: 0.5s;
+    }
+    
+    .slogan {
+        animation-delay: 0.75s;
+    }
+
+    .nav-inline {
+        animation-delay: 0.75s;
+    }
+
+    .box-links {
+        animation-delay: 0.75s;
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+    .nav-inline {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+
+    .nav-inline a {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        letter-spacing: -0.057em;
+        width: 7em;
+        margin: auto;
+        margin-top: 2em;
+        font-size: 2em;
+        transition: color 0.3s ease;
+        position: relative;
+        top: 0;
+        transition: top ease 0.5s;
+    }
+
+    .nav-inline a:hover {
+        top: -7px;
+    }
+
+    .center-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0rem;
+    }
+
+
+    .box-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 3rem;
+        margin-top: 4rem;
+    }
+
+
+    .link-box-1 {
+        display: inline-block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: color 0.3s ease;
+        position: relative;
+        top: 0;
+        transition: top ease 0.5s;
+        
+    }
+
+    .link-box-1 img, .link-box-2 img {
+        display: block;
+        margin: 0;
+    }
+    
+    .link-box-1:hover {
+        top: -7px;
+    }
+
+
+    .link-box-2 {
+        display: inline-block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: color 0.3s ease;
+        position: relative;
+        top: 0;
+        transition: top ease 0.5s;
+    }
+
+    .link-box-2:hover {
+        top: -7px;
+    }
+
+
+
+
+    </style>
+
+    <body>
+        
+        <header class="site-header">
+            <span class="nav-inline" >
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </span>
+        </header>
+
+        <main class="center-content">
+          
+            <img src="sly transparent.svg" alt="Sly Logo">
+            <h1 class="brand-logo">Sly Media</h1>
+            <h2 class="slogan">Creative Content, Stealthy Strategy</h2>
+
+  
+
+            <div class="box-links">
+                <a href="https://whop.com/discipline-coaching-students/?a=sirsamuel" class="link-box-1">
+                   <img src="button 1.svg" alt="button1">
+                </a>
+
+                <a href="https://slymedia.gumroad.com" class="link-box-2">
+                    <img src="button 2.svg" alt="button2">
+                </a>
+            </div>
+
+            
+
+        </main>
+
+
+    </body>
+
+
+
+</head>
+</html>
