@@ -53,6 +53,7 @@
         letter-spacing: -0.057em;
         font-size: 5rem;
         margin-top: 11rem;
+        padding: 0 0.5em;
     }
 
     .about-text {
@@ -62,7 +63,7 @@
         letter-spacing: -0.057em;
         font-size: 2rem;
         margin-top: 0rem;
-        line-height: 1.5em;
+        line-height: 2em;
         position: relative;
         transition: color 0.3s ease;
         top: 0;
@@ -127,7 +128,7 @@
         letter-spacing: -0.057em;
         width: 7em;
         margin: auto;
-        margin-top: 2em;
+        margin-top: 1.5em;
         font-size: 2em;
         transition: color 0.3s ease;
         position: relative;
@@ -192,26 +193,83 @@
         color: inherit;
         
     }
+
+   .about-text a:link {
+        text-decoration: underline;
+            text-underline-offset: 0.3em;
+        color: inherit;
+    }
+
+   .about-text a:visited {
+        text-decoration: underline;
+            text-underline-offset: 0.3em;
+        color: inherit;       
+    }
+
+    .about-text    a:hover {
+            text-decoration: underline;
+            text-underline-offset: 0.3em;
+        color: inherit;
+        }
+
+       .about-text a:active {
+            text-decoration: underline;
+            text-underline-offset: 0.3em;
+        color: inherit;
+        }
+
     
-    a:link {
+     a:link {
         text-decoration: none;
-        color: inherit
+        color: inherit;
     }
 
     a:visited {
         text-decoration: none;
-        color: inherit        
+        color: inherit;       
     }
 
         a:hover {
             text-decoration: none;
-        color: inherit
+        color: inherit;
         }
 
         a:active {
             text-decoration: none;
-        color: inherit
+        color: inherit;
         }
+
+    @media (max-width: 768px) {
+        .logo {
+            margin-top: 3em;
+        }
+
+        .logo-image {
+            max-width: 80%;
+            width: 17em;
+            height: auto;
+        }
+
+        .logo-title {
+            font-size: 3.2em;
+            text-align: center;
+            width: 90%;
+            word-wrap: break-word;
+        }
+
+        .about-header {
+            font-size: 3em;
+            margin-top: 1.5em;
+            text-align: center;
+            padding: 0 1em;
+        }
+
+        .about-text {
+            text-align: center;
+        }
+
+
+    }
 
 
     </style>
@@ -236,13 +294,13 @@
                     <h1 class="about-header">Have a question, idea, or opportunity?</h1>
                     <br>
                     <h2 class="about-text">
-                        <a href="mailto:samfromslymedia@gmail.com">Email - samfromslymedia@gmail.com</a>
+                        <a href="mailto:samfromslymedia@gmail.com">Email</a>
                     </h2>
                     <h2 class="about-text">
-                        <a href="https://x.com/slymediaco">X - @slymediaco</a>
+                        <a href="https://x.com/slymediaco">X / Twitter</a>
                     </h2>
                     <h2 class="about-text">
-                        <a href="https://instagram.com/slymediaco">Instagram - @slymediaco</a>
+                        <a href="https://instagram.com/slymediaco">Instagram</a>
                     </h2>
                 </div>
             </div>
