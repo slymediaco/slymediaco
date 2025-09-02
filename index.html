@@ -37,11 +37,11 @@
         padding-bottom: 2em;
     }
 
-    .center-content img {
+
+    .sly-logo {
         max-width: 26em;
         height: auto;
         display: block;
-        /*margin: 0 auto;*/
         margin-top: 8em;
     }
     
@@ -111,7 +111,7 @@
         letter-spacing: -0.057em;
         width: 7em;
         margin: auto;
-        margin-top: 2em;
+        margin-top: 1.5em;
         font-size: 2em;
         transition: color 0.3s ease;
         position: relative;
@@ -178,12 +178,46 @@
         top: -7px;
     }
 
+    @media (max-width: 768px) {
+        .sly-logo {
+            max-width: 85%;
+            margin-top: 3em;
+        }
 
+        .brand-logo {
+            font-size: 4rem;
+            word-break: break-word;
+            text-align: center;
+        }
+        
+        .slogan {
+            font-size: 1.2rem;
+            width: 90%;
+            margin-top: -2rem;
+        }
+
+        .box-links {
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box-links img {
+            max-width: 90%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        
+    }
 
 
     </style>
 
     <body>
+        
         
         <header class="site-header">
             <span class="nav-inline" >
@@ -194,7 +228,7 @@
 
         <main class="center-content">
           
-            <img src="sly transparent.svg" alt="Sly Logo">
+            <img src="sly transparent.svg" alt="Sly Logo" class="sly-logo">
             <h1 class="brand-logo">Sly Media</h1>
             <h2 class="slogan">Creative Content, Stealthy Strategy</h2>
 
