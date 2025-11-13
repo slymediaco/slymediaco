@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Sly Media</title>
+    <link rel="icon" type="image/x-icon" href="/Users/samuellyo/Desktop/SLY MEDIA SITE/slyicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+     /*  html {
+            cursor: none;
+            height: 100%;
+        }
+    */
+    </style>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <style>
+        html, body {
+            min-height: 100%;
+            margin: 0;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+    body {
+        margin: 0;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        font-family: 'Inter', sans-serif;
+        flex-direction: column;
+        padding-bottom: 5em;
+    }
+
+    /*.center-content img {
+        max-width: 100px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        
+    } */
+
+    
+
+    .about-header {
+        text-align: center;
+        font-weight: 600;
+        letter-spacing: -0.057em;
+        font-size: 5rem;
+        margin-top: 5rem;
+        padding: 0 0.5em;
+    }
+
+    .about-text {
+        text-align: center;
+        font-weight: 600;
+        color: black;
+        letter-spacing: -0.057em;
+        font-size: 2rem;
+        margin-top: 0rem;
+        line-height: 2em;
+        position: relative;
+        transition: color 0.3s ease;
+        top: 0;
+        transition: top ease 0.5s;
+
+    }
+
+    .about-text:hover {
+        top: -7px;
+    }
+
+
+
+    .about-text, .nav-inline, .box-links,
+    .about-header, .logo-image, .logo-title {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 1.5s forwards;
+    }
+
+    .about-header {
+        animation-delay: 0.5s;
+    }
+    
+    .about-text {
+        animation-delay: 0.75s;
+    }
+
+    .nav-inline {
+        animation-delay: 0.75s;
+    }
+
+    .box-links {
+        animation-delay: 0.75s;
+    }
+    
+
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+    .nav-inline {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+       
+    }
+
+
+    .nav-inline a {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        letter-spacing: -0.057em;
+        width: 7em;
+        margin: auto;
+        margin-top: 1.5em;
+        font-size: 2em;
+        transition: color 0.3s ease;
+        position: relative;
+        top: 0;
+        transition: top ease 0.5s;
+    }
+
+    .nav-inline a:hover {
+        top: -7px;
+    }
+
+    .center-content {
+        flex: 1;
+        display: block;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .text-column {
+        max-width: 900px;
+    }
+
+    .line {
+        border-top: 10px solid #ffffff
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top: 0;
+        transition: top ease 0.5s;
+    }
+
+    .logo:hover {
+        top: -7px;
+    }
+
+    .logo-image {
+        max-width: 14em;
+        margin-top: 2rem;
+    }
+    .logo-title {
+        text-align: center;
+        font-weight: 600;
+        letter-spacing: -0.057em;
+        font-size: 3.2em;
+        margin-top: 0rem;
+        text-decoration:none;
+        display: block;
+        color: inherit;
+        
+    }
+
+   .about-text a:link {
+        text-decoration: underline;
+            text-underline-offset: 0.3em;
+        color: inherit;
+    }
+
+   .about-text a:visited {
+        text-decoration: underline;
+            text-underline-offset: 0.3em;
+        color: inherit;       
+    }
+
+    .about-text    a:hover {
+            text-decoration: underline;
+            text-underline-offset: 0.3em;
+        color: inherit;
+        }
+
+       .about-text a:active {
+            text-decoration: underline;
+            text-underline-offset: 0.3em;
+        color: inherit;
+        }
+
+    
+     a:link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    a:visited {
+        text-decoration: none;
+        color: inherit;       
+    }
+
+        a:hover {
+            text-decoration: none;
+        color: inherit;
+        }
+
+        a:active {
+            text-decoration: none;
+        color: inherit;
+        }
+
+    @media (max-width: 768px) {
+        .logo {
+            margin-top: 3em;
+        }
+
+        .logo-image {
+            max-width: 80%;
+            width: 17em;
+            height: auto;
+        }
+
+        .logo-title {
+            font-size: 3.2em;
+            text-align: center;
+            width: 90%;
+            word-wrap: break-word;
+        }
+
+        .about-header {
+            font-size: 3em;
+            margin-top: 1.5em;
+            text-align: center;
+            padding: 0 1em;
+        }
+
+        .about-text {
+            text-align: center;
+        }
+
+
+    }
+
+
+    </style>
+
+    <body>
+
+
+        
+        <header class="site-header">
+            <span class="nav-inline" >
+                <a href="/about/">About</a>
+                <a href="/contact/">Contact</a>
+            </span>
+        </header>
+        <a href="/">
+        <main class="logo">
+            <img src="sly transparent4.png" alt="Sly Logo" class="logo-image">
+            <h1 class="logo-title">Sly Media</h1>
+        </main>
+        </a>
+        <main class="center-content">
+            <div class="container">
+                
+                <div class="text-column">
+
+                    <div data-youform-embed data-form='ztf37vyi' data-width="100%" data-height="700"></div>
+        <script src="https://app.youform.com/embed.js"></script>
+
+        <h1 class="about-header">Your future thanks you</h1>
+                    
+                </div>
+            </div>
+
+            
+            
+
+        </main>
+
+
+    </body>
+
+
+
+</head>
+</html>
