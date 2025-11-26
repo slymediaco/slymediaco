@@ -154,7 +154,7 @@
         
     }
 
-    .link-box-1 img, .link-box-2 img {
+    .link-box-1 img, .link-box-2 img, .link-box-3 img {
         display: block;
         margin: 0 auto;
         height: auto;
@@ -179,6 +179,21 @@
     .link-box-2:hover {
         top: -7px;
     }
+
+    .link-box-3 {
+        display: inline-block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: color 0.3s ease;
+        position: relative;
+        top: 0;
+        transition: top ease 0.5s;   
+    }
+    
+    .link-box-3:hover {
+        top: -7px;
+    }
+    
 
     @media (max-width: 768px) {
         .sly-logo {
@@ -247,6 +262,10 @@
 
                 <a href="https://slymedia.gumroad.com" class="link-box-2">
                     <img src="button digital.png" alt="button2">
+                </a>
+
+                <a href="https://youtube.com/@samuellyo" class="link-box-3">
+                    <img src="button youtube.png" alt="button3">
                 </a>
             </div>
 
