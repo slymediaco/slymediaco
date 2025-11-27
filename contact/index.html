@@ -71,13 +71,27 @@
 
     }
 
+    .about-text-1 {
+        text-align: center;
+        font-weight: 600;
+        color: black;
+        letter-spacing: -0.057em;
+        font-size: 2rem;
+        margin-top: 0rem;
+        line-height: 2em;
+        position: relative;
+        transition: color 0.3s ease;
+        top: 0;
+        transition: top ease 0.5s;
+    }
+
     .about-text:hover {
         top: -7px;
     }
 
 
 
-    .about-text, .nav-inline, .box-links,
+    .about-text, .about-text-1, .nav-inline, .box-links,
     .about-header, .logo-image, .logo-title {
         opacity: 0;
         transform: translateY(20px);
@@ -89,6 +103,10 @@
     }
     
     .about-text {
+        animation-delay: 0.75s;
+    }
+
+    .about-text-1 {
         animation-delay: 0.75s;
     }
 
@@ -293,8 +311,8 @@
                 <div class="text-column">
                     <h1 class="about-header">Have a question, idea, or opportunity?</h1>
                     <br>
-                    <h2 class="about-text">
-                        <a href="mailto:samfromslymedia@gmail.com">Email</a>
+                    <h2 class="about-text-1">
+                        <a>samfromslymedia@gmail.com</a>
                     </h2>
                     <h2 class="about-text">
                         <a href="https://instagram.com/samuel.lyo">Instagram</a>
