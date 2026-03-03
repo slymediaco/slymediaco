@@ -4,17 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Momentum Method - Build Unbreakable Discipline</title>
-    <!--
-Source - https://stackoverflow.com/a/55121118
-Posted by wooohooo
-Retrieved 2026-03-01, License - CC BY-SA 4.0
--->
-
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        
         * {
             margin: 0;
             padding: 0;
@@ -30,30 +25,30 @@ Retrieved 2026-03-01, License - CC BY-SA 4.0
 
         .first1 {
             background: #f5f4ed;
-            border-top: 1px solid rgba(94, 94, 90, 0.2)
+            border-top: 1px solid rgba(94, 94, 90, 0.2);
         }
         .first2 {
             background: #f5f4ed;
-            border-bottom: 1px solid rgba(94, 94, 90, 0.2)
+            border-bottom: 1px solid rgba(94, 94, 90, 0.2);
         }
 
 
         .second1 {
             background: #f0eee6;
-            border-top: 1px solid rgba(94, 94, 90, 0.2)
+            border-top: 1px solid rgba(94, 94, 90, 0.2);
         }
         .second2 {
             background: #f0eee6;
-            border-bottom: 1px solid rgba(94, 94, 90, 0.2)
+            border-bottom: 1px solid rgba(94, 94, 90, 0.2);
         }
 
         .third1 {
             background: #ffffff;
-            border-top: 1px solid rgba(94, 94, 90, 0.2)
+            border-top: 1px solid rgba(94, 94, 90, 0.2);
         }
         .third2 {
             background: #ffffff;
-            border-bottom: 1px solid rgba(94, 94, 90, 0.2)
+            border-bottom: 1px solid rgba(94, 94, 90, 0.2);
         }
         .investment {
             background: #f0eee6;
@@ -376,6 +371,13 @@ Retrieved 2026-03-01, License - CC BY-SA 4.0
             line-height: 1.8;
             text-align: center;
         }
+        .problem-content ul {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: rgba(94, 94, 90, 1);
+            line-height: 1.8;
+            text-align: left;
+        }
 
         .solution-list {
             display: grid;
@@ -403,7 +405,7 @@ Retrieved 2026-03-01, License - CC BY-SA 4.0
         .solution-item p {
             font-size: 1rem;
             font-weight: 500;
-            color: rgba(94, 94, 90, );
+            color: rgba(94, 94, 90, 1);
             line-height: 1.6;
             margin: 0;
         }
@@ -417,6 +419,7 @@ Retrieved 2026-03-01, License - CC BY-SA 4.0
 
         .step-box {
             background: rgba(255, 255, 255, 1);
+            border: 1px solid rgba(94, 94, 94, 0.4);
             border-radius: 20px;
             padding: 1.5rem;
             transition: all 0.3s ease;
@@ -457,7 +460,7 @@ Retrieved 2026-03-01, License - CC BY-SA 4.0
         }
 
         .benefit-box {
-            background: #e3dacc;
+            background: #f0eee6;
             border-left: 3px solid #111111;
             padding: 1.25rem;
             border-radius: 20px;
@@ -501,6 +504,33 @@ Retrieved 2026-03-01, License - CC BY-SA 4.0
             margin: 0;
         }
 
+        .chart1-img {
+        display: grid;
+        gap: 1rem;
+        margin: 1.5rem auto;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 55px;
+        border: 1px solid rgba(94, 94, 94, 0.4);
+        width: 100%;
+        max-width: 900px;
+        box-sizing: border-box;
+        font-family: 'Manrope', sans-serif;
+        }
+        .spreadsheet1-img {
+        display: grid;
+        gap: 1rem;
+        margin: 1.5rem auto;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 55px;
+        border: 1px solid rgba(94, 94, 94, 0.4);
+        width: 100%;
+        max-width: 900px;
+        box-sizing: border-box;
+        font-family: 'Manrope', sans-serif;
+        }
+        
+
+
         .testimonials-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -518,7 +548,6 @@ Retrieved 2026-03-01, License - CC BY-SA 4.0
 
         .testimonial-card:hover {
             background: #f5f4ed;
-            transform: translateY(-4px);
         }
 
         .testimonial-number {
@@ -604,6 +633,40 @@ Retrieved 2026-03-01, License - CC BY-SA 4.0
             line-height: 1.6;
             margin: 0;
         }
+        .faq-answer ul {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: rgba(94, 94, 90, 1);
+            line-height: 1.6;
+            margin: 0;
+        }
+        
+        .underline{position: relative;}
+        .underline:before {
+        content: "";
+        width:00%;
+        height: 0em;
+        left: 0;
+        width: 00%;
+        z-index:-10;
+        }
+        .underline:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    left: 0;
+    bottom: -10px;
+    z-index: -10;
+    background-image: url('underline.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 20px;
+    background-position: center;
+}
+
+        .investment-title u {
+            text-decoration-color: #7b75b8;
+        }
 
         .investment-content {
             max-width: 800px;
@@ -632,7 +695,7 @@ Retrieved 2026-03-01, License - CC BY-SA 4.0
             justify-content: space-between;
             padding: 3px 0;
             gap: 2rem;
-            align-items: center;   /* ✅ this centers vertically */
+            align-items: center;  
             font-family: 'Manrope', sans-serif;
         }
 
@@ -669,7 +732,7 @@ Retrieved 2026-03-01, License - CC BY-SA 4.0
             font-weight: 600;
             color: #111111;
             font-family: 'EB Garamond';
-            line-height: 1;   /* helps vertical alignment */
+            line-height: 1;  
         }
         
         
@@ -749,6 +812,83 @@ Retrieved 2026-03-01, License - CC BY-SA 4.0
                 grid-template-columns: 1fr;
             }
         }
+        
+                
+        @property --angle {
+            syntax: '<angle>';
+            initial-value: 0deg;
+            inherits: false;
+        } 
+
+        @keyframes borderSpin {
+            from { --angle: 0deg; }
+            to   { --angle: 360deg; }
+        }
+
+        
+
+.investment-box-wrapper {
+    position: relative;
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 1.5rem;
+    max-width: 600px;
+    margin: 1.5rem auto 0 auto;
+}
+
+.investment-box-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 5px;
+    background: conic-gradient(
+        from var(--angle, 0deg),
+        rgba(255, 255, 255, 1) 0deg,
+        rgba(255, 255, 255, 1) 60deg,
+        rgba(255, 255, 255, 1) 75deg,
+        rgba(255, 255, 255, 1) 80deg,
+        rgba(123, 117, 184, 1) 90deg,
+        rgba(123, 117, 184, 1) 120deg,
+        rgba(255, 255, 255, 1) 130deg,
+        rgba(255, 255, 255, 1) 150deg,
+        rgba(255, 255, 255, 1) 160deg,
+        rgb(255, 255, 255) 360deg
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    animation: borderSpin 4s linear infinite;
+}
+
+
+.investment-box-wrapper::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: 22px;
+    background: conic-gradient(
+        from var(--angle, 0deg),
+        transparent 0deg,
+        transparent 70deg,
+        rgba(255, 255, 255, 0.3) 90deg,
+        transparent 110deg,
+        transparent 360deg
+    );
+    filter: blur(8px);
+    animation: borderSpin 1s linear infinite;
+    z-index: -1;
+}
+
+.investment-box-inner {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
     </style>
 </head>
 <body>
@@ -767,7 +907,7 @@ Retrieved 2026-03-01, License - CC BY-SA 4.0
         <section class="section hero scroll-fade">
             <div class="section-inner">
             <h1>Build Unbreakable Discipline. Create Real Momentum.</h1>
-            <p>A private 3-month coaching experience designed to help you master structure, consistency, and self-control... without burnout or chaos.</p>
+            <p>A private 3-month implementation program designed to help you master structure, consistency, and execution... without burnout or chaos.</p>
             <div class="cta-group">
                 <button class="primary-btn" onclick="window.location.href='/form/'">APPLY NOW</button>
                 <p class="secondary-text" style="color: rgb(94, 94, 90);">Limited spots left.</p>
@@ -777,159 +917,216 @@ Retrieved 2026-03-01, License - CC BY-SA 4.0
 
         <section class="section first1 scroll-fade">
             <div class="section-inner">
-            <h2>You know what to do, but you can't seem to <span style="color: #7b75b8;">stay consistent.</span></h2>
+            <h2>You Know What To Do, But You Can't Seem To <span style="color: #7b75b8;">Stay Consistent.</span></h2>
             
-            <div class="problem-content" style="text-align: center";>
-                <p>You've tried routines, planners, productivity apps. You start strong for a few days… then slip back into distraction.</p>
+            <div class="problem-content" style="text-align: center;">
+                <p>You've tried routines, planners, productivity apps. You start strong for a few days... then slip back into distraction.</p>
                 <br>
-                <p>It's not because you're lazy. It's because no one ever taught you how to build systems that keep you accountable, even when motivation dies out.</p>
+                <p>It's not laziness.</p>
+                <p>It's a system problem.</p>
                 <br>
-                <p>Especially when no one is watching. But that's exactly where momentum makes the difference.</p>
+                <p>No one taught you how to build an environment that holds you accountable when motivation disappears.</p>
+                <br>
+                <p>Especially when no one is watching.</p>
+                <br>
+                <pr>That's where momentum changes everything.</pr>
             </div>
             </div>
         </section>
 
         <section class="section first2 scroll-fade">
             <div class="section-inner">
-            <h2>That's why I created the Momentum Method.</h2>
-            <p style="font-size: 1.05rem; font-weight: 500; color: rgba(94, 94, 90, 1); line-height: 1.8; margin-bottom: 1.5rem; text-align: center; font-family: 'Manrope', sans-serif; ">A private, 3-month coaching program built to help you:</p>
+            <h2>That's Why I Created The Momentum Method.</h2>
+            <p style="font-size: 1.05rem; font-weight: 500; color: rgba(94, 94, 90, 1); line-height: 1.8; margin-bottom: 1.5rem; text-align: center; font-family: 'Manrope', sans-serif; ">A private, 12-week coaching experience built to help you:</p>
             <div class="solution-list">
                 <div class="solution-item">
                     <span>✓</span>
-                    <p>Build consistent daily habits and make them automatic.</p>
+                    <p>Turn daily habits into automatic behavors.</p>
                 </div>
                 <div class="solution-item">
                     <span>✓</span>
-                    <p>Eliminate procrastination and self-doubt.</p>
+                    <p>Eliminate procrastination at the root.</p>
                 </div>
                 <div class="solution-item">
                     <span>✓</span>
-                    <p>Create routines that actually fit your lifestyle and goals.</p>
+                    <p>Build routines that fit your life... not fight it.</p>
                 </div>
                 <div class="solution-item">
                     <span>✓</span>
-                    <p>Feel calm, confident, and in control every single day.</p>
+                    <p>Operate calmly, confidently, and in control.</p>
                 </div>
             </div>
-            <p style="font-size: 1.05rem; font-weight: 500; color: rgba(94, 94, 90, 1); line-height: 1.8; margin-top: 1.5rem; text-align: center; font-family: 'Manrope', sans-serif;">You'll finally stop overthinking and start moving with purpose. No motivational fluff. Just systems that work.</p>
+            <p style="font-size: 1.05rem; font-weight: 500; color: rgba(94, 94, 90, 1); line-height: 1.8; margin-top: 1.5rem; text-align: center; font-family: 'Manrope', sans-serif;">You'll finally stop overthinking and start moving with purpose.</p>
+            <p style="font-size: 1.05rem; font-weight: 500; color: rgba(94, 94, 90, 1); line-height: 1.8; margin-top: 1.5rem; text-align: center; font-family: 'Manrope', sans-serif;">No motivational fluff or hype. Just structured execution and systems that work.</p>
             <div style="display: flex; justify-content: center; margin-top: 2rem;">
                 <button class="primary-btn" onclick="window.location.href='/form/'">APPLY FOR YOUR SPOT</button>
             </div>
             </div>
+            <br>
+            <br>
+            <br>
+            <img src="spreadsheet1.PNG" alt="spreadsheet1" class="spreadsheet1-img">
+            
+            <p style="font-size: 1.05rem; font-family: 'Manrope'; font-weight: 500; color: rgba(94, 94, 90, 1); line-height: 1.8; margin-bottom: 1.5rem; text-align: center;"><i>Partial Momentum OS example screenshot</i></p>
         </section>
 
         
 
-        <section class="section second scroll-fade">
+        <section class="section second1 scroll-fade">
             <div class="section-inner">
-            <h2>Here's how it works.</h2>
-            <h3 style="font-size: 1.1rem; font-weight: 500; margin-bottom: 1.5rem; color: rgba(94, 94, 90, 1); font-family: 'Manrope', sans-serif;">A structured, results-driven system for real change.</h3>
+            <h2>Here's How It Works.</h2>
+            <h3 style="font-size: 1.1rem; font-weight: 500; margin-bottom: 1.5rem; color: rgba(94, 94, 90, 1); font-family: 'Manrope', sans-serif;">A structured, results-driven system designed for real change.</h3>
             <div class="steps-grid">
                 <div class="step-box scroll-fade">
                     <div class="step-number">1</div>
                     <h4>Strategy Call</h4>
-                    <p>We'll identify your goals and what's holding you back and design your personal momentum system. One that fits your schedule, lifestyle, and ambitions.</p>
+                    <p>We'll identity your goals, bottlenecks, and behaviors that hold you back. Then we'll design your personal Momentum system around your schedule and standards.</p>
                 </div>
                 <div class="step-box scroll-fade">
                     <div class="step-number">2</div>
-                    <h4>Weekly 1:1 Calls</h4>
-                    <p>Each week, we'll refine your routines, eliminate distractions, and lock in discipline through accountability and measurable progress.</p>
+                    <h4>Weekly 1:1 implementation Calls</h4>
+                    <p>We'll refine your structure, elimiate friction, and lock in discipline through accountability and measurable progress.</p>
                 </div>
                 <div class="step-box scroll-fade">
                     <div class="step-number">3</div>
-                    <h4>Daily Messaging Access</h4>
-                    <p>Stay accountable with daily text check-ins and support. You'll never fall off without a safety net again.</p>
+                    <h4>Daily Accountability Access</h4>
+                    <p>Short daily check-ins to ensure execution never drifts off course. You'll never fall off without a safety net.</p>
                 </div>
                 <div class="step-box scroll-fade">
                     <div class="step-number">4</div>
-                    <h4>Custom Digital System</h4>
-                    <p>Get exclusive templates for habit tracking, reflection, and planning, the same system used by top-performing students, athletes, and professionals.</p>
+                    <h4>Custom Digital Operating System</h4>
+                    <p>You'll receive private templates for habit tracking, weekly audits, reflection, and planning. This is built for high performers in all fields.</p>
                 </div>
                 <div class="step-box scroll-fade">
                     <div class="step-number">5</div>
-                    <h4>Progress Tracking & Adjustments</h4>
+                    <h4>Weekly Performance Reviews</h4>
                     <p>Each week, we'll review your results and refine your system, making sure you're always improving, never plateauing. You'll see measurable proof of progress in habits, focus, and performance.</p>
                 </div>
                 <div class="step-box scroll-fade">
                     <div class="step-number">6</div>
-                    <h4>Long-Term Momentum Plan</h4>
-                    <p>Before the program ends, we'll build a personalized long-term structure so your discipline and growth continue for years, even without coaching.</p>
+                    <h4>Long-Term Momentum Blueprint</h4>
+                    <p>Before the program ends, we'll build a sustainable system you can run independently for years.</p>
                 </div>
             </div>
             <div style="display: flex; justify-content: center; margin-top: 2rem;">
                 <button class="primary-btn" onclick="window.location.href='/form/'">APPLY NOW</button>
             </div>
+
             </div>
+        </section>
+        
+        <section class="section second2 scroll-fade">
+            <section class="section-inner">
+            <h2>What "Momentum Method" Actually Means.</h2>
+            <div class="problem-content" style="text-align: center;">
+            <p>The Momentum Method is based on proven principles from behavioral psychology, neuroscience, and habit design.</p>
+            <br>
+            <p>It's all about creating systems that generate compounding progress.</p>
+            <br>
+            <p>When you build small, consistent wins, they reinforce each other, creating momentum that keeps you moving forward automaticaly.</p>
+            <br>
+            <br>
+            <br>
+            <p>This method combines:</p>
+            <br>
+            <ul><b>Habit stacking -</b> Turning small actions into automatic routines.</ul>
+            <ul><b>Environmental design -</b> Structuring your surroundings to make good behaviours inevitable.</ul>
+            <ul><b>Accountability loops -</b> Daily check-ins that prevent drift.</ul>
+            <ul><b>Progress feedback -</b> Tracking results so every action compounds into measurable outcomes.</ul>
+            <br>
+            <br>
+            <p>In short, the Momentum Method engineers your behavior so that consistency becomes effortless and self-reinforcing.</p>
+            </div>
+
+            </section>
         </section>
 
         <section class="section third1 scroll-fade">
             <div class="section-inner">
+                
             <h2>Momentum > Motivation.</h2>
-            <p style="font-size: 1.05rem; font-weight: 500; color: rgba(94, 94, 90, 1); line-height: 1.8; margin-bottom: 1.5rem; text-align: center; font-family: 'Manrope', sans-serif;">Most people wait until they "feel ready." Winners create systems that make readiness irrelevant.</p>
-            <p style="font-size: 1.05rem; font-weight: 500; color: rgba(94, 94, 90, 1); line-height: 1.8; margin-bottom: 1.5rem; text-align: center; font-family: 'Manrope', sans-serif;">The Momentum Method is built on neuroscience-backed principles of habit design and performance psychology, helping you:</p>
+            <p style="font-size: 1.05rem; font-weight: 500; color: rgba(94, 94, 90, 1); line-height: 1.8; margin-bottom: 1.5rem; text-align: center; font-family: 'Manrope', sans-serif;">Most people wait to feel ready.</p>
+            <p style="font-size: 1.05rem; font-weight: 500; color: rgba(94, 94, 90, 1); line-height: 1.8; margin-bottom: 1.5rem; text-align: center; font-family: 'Manrope', sans-serif;">High performers design systems that make readiness feel irrelevant.</p>            
+            <p style="font-size: 1.05rem; font-weight: 500; color: rgba(94, 94, 90, 1); line-height: 1.8; margin-bottom: 1.5rem; text-align: center; font-family: 'Manrope', sans-serif;">The Momentum Method is built on performance psychology and neuroscience-backed principles of habit design that help you:</p>
             <div class="benefits-grid">
                 <div class="benefit-box scroll-fade">
                     <p><strong>Rewire your environment</strong> for discipline</p>
                 </div>
                 <div class="benefit-box scroll-fade">
-                    <p><strong>Stay focused</strong> even when life gets messy</p>
+                    <p><strong>Stay focused</strong> when life gets messy</p>
                 </div>
                 <div class="benefit-box scroll-fade">
-                    <p><strong>Build consistency</strong> through small, controllable wins</p>
+                    <p><strong>Build consistency</strong> through small, controlled wins</p>
                 </div>
             </div>
-            <p style="font-size: 1.05rem; font-weight: 500; color: rgba(94, 94, 90, 1); line-height: 1.8; margin-top: 1.5rem; text-align: center; font-family: 'Manrope', sans-serif;">Because discipline isn't about forcing yourself... it's about designing yourself.</p>
+            <p style="font-size: 1.05rem; font-weight: 500; color: rgba(94, 94, 90, 1); line-height: 1.8; margin-top: 1.5rem; text-align: center; font-family: 'Manrope', sans-serif;">Discipline isn't about forcing yourself.</p>
+            <p style="font-size: 1.05rem; font-weight: 500; color: rgba(94, 94, 90, 1); line-height: 1.8; margin-top: 1.5rem; text-align: center; font-family: 'Manrope', sans-serif;">It's about engineering yourself.</p>
             </div>
+            <br>
+            <br>
+            <br>
+            <img src="chart1.png" alt="chart1" class="chart1-img">
         </section>
 
         <section class="section third2 scroll-fade">
             <div class="section-inner">
-            <h2>Real Results. Real Discipline</h2>
-             <div class="problem-content" style="text-align: center";>
-                <p>I used to wake up every day planning to work out, study, and stay on track, but by the end of the week, I’d burned out and lost focus. Balancing school, work, and fitness felt impossible until I built a system that made consistency automatic.</p>
+            <h2>How I Built A System That <span style="color: #7b75b8;">Actually Works.</span></h2>
+             <div class="problem-content" style="text-align: center;">
+                <p>I used to wake up every day planning to train, study, and stay ahead.</p>
                 <br>
-                <p>Over time, that system turned into what’s now the Momentum Method; a structure designed for busy people who want to build discipline that actually lasts.</p>
+                <p>By the end of the week, I was always burned out</p>
                 <br>
-                <p>This approach helped me stay consistent with 6 workouts a week, smash my fitness goals, and maintain top grades while working a part-time job. I built it from my own trial and error, so every part of this system exists because it worked in real life.</p>
+                <p>Balancing school, work, and fitness felt impossible... until I built a structure that made consistency automatic.</p>
                 <br>
-                <p>The Momentum Method isn’t about motivation. It’s about building systems that make consistency effortless.</p>
                 <br>
-                <p>One good habit makes the next one easier, which makes the next one easier, and so on... until you've built up so much momentum that you can't even recognize who you used to be.</p>
+                <br>
+                <p>That structure became the <b><u>Momentum Method</u></b>.</p>
+                <br>
+                <br>
+                <br>
+                <p>It allowed me to train six days a week, maintain top academic performance, and work part-time without falling into cycles of burnout.</p>
+                <br>
+                <p>Every component of this system exists becuase it was pressure-tested in real life.</p>
+                <br>
+                <br>
+                <br>
+                <p>This isn't theory.</p>
             </div>
             </div>
         </section>
 
         <section class="section scroll-fade">
-       <h2><h2>This program is for you if you're…</h2>.</h2>
+            <div class="section-inner">
+       <h2>This Is Perfect For You If You're:</h2>
             <div class="section-inner">
              <div class="testimonials-grid">
                 <div class="testimonial-card scroll-fade">
-                    <div class="testimonial-number">A Distracted High-Performer</div>
-                    <p>Ambitious, knows you have potential, execution is inconsistent.</p>
+                    <div class="testimonial-number">The Distracted High-Performer</div>
+                    <p>You're ambitious. You have potential. Execution is inconsistent.</p>
                 </div>
                 <div class="testimonial-card scroll-fade">
-                    <div class="testimonial-number">An Entrepreneur Without Structure</div>
-                    <p>Trying to build something, feeling busy but scattered, always "working" but not progressing clearly.</p>
+                    <div class="testimonial-number">The Entrepreneur Without Structure</div>
+                    <p>You're building something, but your days feel reactive and scattered.</p>
                 </div>
                 <div class="testimonial-card scroll-fade">
-                    <div class="testimonial-number">A Self-Negotiator</div>
-                    <p>Knows what to do, doesn't follow through, makes excuses quietly.</p>
+                    <div class="testimonial-number">The Self-Negotiator</div>
+                    <p>You know what to do. You just don't follow through consistently.</p>
                 </div>
                 <div class="testimonial-card scroll-fade">
-                    <div class="testimonial-number">Feeling Behind But Have High Standards</div>
-                    <p>Mature, feeling misaligned with your potential, not operating at the level you should be.</p>
+                    <div class="testimonial-number">The High-Standard Operator</div>
+                    <p>You feel misaligned with your potential and know you should be operating at a higher level.</p>
                 </div>
                 <div class="testimonial-card scroll-fade">
-                    <div class="testimonial-number">A Gym-Focused Builder Lacking Structure</div>
-                    <p>Into lifting, disciplined in the gym but inconsistent in business / life, watches "grind" content but lacks systems.</p>
+                    <div class="testimonial-number">The Gym-Disciplined, Life-Scattered Builder</div>
+                    <p>Strong in the gym. Inconsistent in business or life structure.</p>
                 </div>
                 <div class="testimonial-card scroll-fade">
-                    <div class="testimonial-number">A Reset Addict (Most Common)</div>
-                    <p>Lives in cycles, constant new routines, challenges and detoxes instead of sustainability, addicted to fresh starts.</p>
+                    <div class="testimonial-number">The Reset Addict (Most Common)</div>
+                    <p>Constantly restarting routines instead of building sustainability.</p>
                 </div>
             </div>
             </div>
-            
+            </div>
         </section>
     
         <section class="section scroll-fade">
@@ -938,31 +1135,38 @@ Retrieved 2026-03-01, License - CC BY-SA 4.0
             <div class="faq-container">
                 <div class="faq-item">
                     <div class="faq-question"><span>Are you qualified to help me?</span><span class="faq-toggle">+</span></div>
-                    <div class="faq-answer"><p>This is not fitness coaching or educational tutoring. You have YouTube for that. This is for people who already know what they're doing but struggle with consistency and discipline. The hardest part about going to the gym isn't learning how to lift weight, it's having a system in place to make sure you go to the gym every single day.</p></div>
+                    <div class="faq-answer"><p>This isn't fitness coaching or tutoring. You can get that on YouTube. The Momentum Method is for people who already know what to do but struggle with consistency and discipline. Success isn't about knowledge, it's about having a system that ensures you actually follow through.</p></div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question"><span>How long is the program?</span><span class="faq-toggle">+</span></div>
-                    <div class="faq-answer"><p>The Momentum Method is a private 3-month coaching program. This timeframe helps you build lasting habits. During these 3 months, you'll have weekly 1:1 calls, daily messaging support, and access to all custom resources.</p></div>
+                    <div class="faq-answer"><p>The program is 3 months (12 weeks). This timeframe is optimal for building lasting habits. You'll have weekly 1:1 calls, daily check-ins, and access to all custom resources throughout the program.</p></div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question"><span>What's your refund policy?</span><span class="faq-toggle">+</span></div>
-                    <div class="faq-answer"><p>We offer a full refund within the first 7 days if you're not satisfied. No questions asked, simple as that. We're confident you'll see results.</p></div>
+                    <div class="faq-answer"><p>We offer a full refund within the first 7 days if you're not satisfied. No questions asked. We're confident the system will deliver results when implemented properly.</p></div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question"><span>What makes this different?</span><span class="faq-toggle">+</span></div>
-                    <div class="faq-answer"><p>Most programs focus on motivation. The Momentum Method is built on implementation and systems. You get personalized strategy calls, weekly accountability, daily messaging support, custom worksheets, and discipline-building that works.</p></div>
+                    <div class="faq-answer"><p>Most programs focus on motivation. The Momentum Method focuses on implementation.</p> 
+                        <p>You get:
+                        <ul>- Personalized strategy calls</ul>
+                        <ul>- Weekly accountability</ul>
+                        <ul>- Daily messaging support</ul>
+                        <ul>- Custom worksheets</ul>
+                        <ul>- A systemized approach to building discipline that actually works</ul>
+                    </p></div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question"><span>Can I extend after 3 months?</span><span class="faq-toggle">+</span></div>
-                    <div class="faq-answer"><p>Absolutely. Many clients extend beyond 3 months. We'll discuss your progress and create a customized plan including ongoing 1:1 calls, group coaching, or maintenance support.</p></div>
+                    <div class="faq-question"><span>Can I continue after 3 months?</span><span class="faq-toggle">+</span></div>
+                    <div class="faq-answer"><p>Absolutely. Many clients extend beyond 3 months. We'll review your progress and create a customized plan for ongoing 1:1 calls, group coaching, or maintenance support.</p></div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question"><span>How much time per week?</span><span class="faq-toggle">+</span></div>
-                    <div class="faq-answer"><p>Expect 3-5 hours per week implementing your system, plus one 30-60 minute weekly call. Daily check-ins are 5-10 minutes. This focused approach actually saves time overall.</p></div>
+                    <div class="faq-question"><span>How much time will this take per week?</span><span class="faq-toggle">+</span></div>
+                    <div class="faq-answer"><p>Expect 3-5 hours per week to implement your system, plus a 30-60 minute weekly call. Daily check-ins take 5-10 minutes. This structured approach actually saves time while delivering results.</p></div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question"><span>Is this for fitness or entrepreneurship?</span><span class="faq-toggle">+</span></div>
-                    <div class="faq-answer"><p>Both! And not just fitness or entrepreneurship either. This program is for discipling overall. Discipline is the foundation of achieving whatever goal you want in any facet of your life.</p></div>
+                    <div class="faq-question"><span>Is this only for fitness or entrepreneurship?</span><span class="faq-toggle">+</span></div>
+                    <div class="faq-answer"><p>No. This program is for disciplining your life across any domain. Fitness, business, academics, or personal goals. Discipline is the foundation for achieving anything.</p></div>
                 </div>
             </div>
             </div>
@@ -970,12 +1174,14 @@ Retrieved 2026-03-01, License - CC BY-SA 4.0
 
         <section class="section investment scroll-fade">
             <div class="section-inner">
-            <h2>Your investment: $930 for 3 months.</h2>
-            <div class="investment-content">
-                <p>You're not paying for quick information, you're investing in transformation. This isn't a course. It's an implementation system with real accountability, real coaching, and real results.</p>
+            <div class="investment-title">
+            <h2>This Is <span class="underline">NOT</span> A Course</h2>
+            </div>
+            <div class="investment-content" style="text-align: center;">
+                <p>It is a structured implementation partnership with real accountability, real oversight, and measurable results.</p>
                <br>
                 <h3 style="margin-top: 0; margin-bottom: 1rem;">You'll receive:</h3>
-                <div style="background: #ffffff; border-radius: 20px; padding: 1.5rem; margin-top: 1.5rem;">
+                <div class="investment-box-wrapper"><div class="investment-box-inner">
                     
                                 <div class="logo2"></div>
                                 <div class="logo-line"></div>
@@ -994,28 +1200,35 @@ Retrieved 2026-03-01, License - CC BY-SA 4.0
                         </div>
                         <div class="investment-item">
                             <div class="investment-number">4</div>
-                            <span class="item">Weekly Standard Audits & Adjustments</span>
+                            <span class="item">Weekly Performance Audits & Adjustments</span>
                         </div>
                         <div class="investment-item">
                             <div class="investment-number">5</div>
                             <span class="item">The Momentum Blueprint</span>
                         </div>
                     </div>
-                    <p style="font-size: 1.05rem; font-weight: 500; color: rgba(94, 94, 90, 1); line-height: 1.8; margin-bottom: 1.5rem; text-align: center;">Monthly payment option available upon request.</p>
+                    <h3 style="font-size: 2.5em; margin-top: 0; margin-bottom: 1rem;">$930</h3>
+                    <p style="font-size: 1.05rem; font-weight: 500; color: rgba(94, 94, 90, 1); line-height: 0.1; margin-bottom: 2.5rem; text-align: center;">Only $310/month.</p>
 
                     <div style="display: flex; justify-content: center;">
                         <button class="primary-btn" onclick="window.location.href='/form/'" id="apply">APPLY NOW</button>
                     </div>
+                    <br>
+                    <p style="font-size: 1.05rem; font-weight: 500; color: rgba(94, 94, 90, 1); line-height: 1.8; margin-bottom: 1.5rem; text-align: center;">Spots are limited to maintain high accountability standards.</p>
                 </div>
+                
             </div>
+            
+        <p style="font-size: 0.8rem; font-weight: 500; color: rgba(94, 94, 90, 1); line-height: 3.8; margin-bottom: 0rem; text-align: center;">Monthly payment option available upon request.</p>
+        </div>
+            
             </div>
         </section>
 
         <section class="section third1 scroll-fade">
             <div class="section-inner">
-            <h2>Take Control of Your Discipline Today</h2>
+            <h2>Take Control of Your Discipline</h2>
             <div class="problem-content">
-                <p>You’re not buying motivation, you’re investing in a proven system that actually works. This is a rare chance to get high-level coaching and resources at a fraction of the true cost.</p>
                 <div style="display: flex; justify-content: center; margin-top: 2rem;">
                     <button class="primary-btn" onclick="window.location.href='/form/'">APPLY NOW</button>
                 </div>
@@ -1026,7 +1239,7 @@ Retrieved 2026-03-01, License - CC BY-SA 4.0
             <h2>Still have questions?</h2>
             <div class="problem-content">
                 <p>Just send an email to samfromslymedia@gmail.com</p>
-                <p>Or DM me on Instagram at <a href="https://instagram.com/samuel.lyo">@samuel.lyo</a></p>
+                <p>Or DM me on Instagram - <a href="https://instagram.com/samuel.lyo">@samuel.lyo</a></p>
                 </div>
         </section>
     </main>
@@ -1058,9 +1271,9 @@ Retrieved 2026-03-01, License - CC BY-SA 4.0
         faqItems.forEach(item => {
             item.querySelector('.faq-question').addEventListener('click', () => {
                 faqItems.forEach(otherItem => {
-                    if (otherItem !== item) {
+                    /*if (otherItem !== item) {
                         otherItem.classList.remove('active');
-                    }
+                    }*/
                 });
                 item.classList.toggle('active');
             });
@@ -1076,7 +1289,25 @@ Retrieved 2026-03-01, License - CC BY-SA 4.0
             });
         });
     </script>
+    <script>
+const faders = document.querySelectorAll('.scroll-fade');
+
+const appearOptions = {
+  threshold: 0.1,
+  rootMargin: "0px 0px -50px 0px"
+};
+
+const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+  entries.forEach(entry => {
+    if(!entry.isIntersecting) return;
+    entry.target.classList.add('visible');
+    appearOnScroll.unobserve(entry.target);
+  });
+}, appearOptions);
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
+</script>
 </body>
 </html>
-
-
