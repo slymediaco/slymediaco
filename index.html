@@ -350,7 +350,7 @@
             font-size: clamp(2rem, 6vw, 3.5rem);
             font-weight: 600;
             margin-bottom: 1.5rem;
-            line-height: 1.2;
+            line-height: 1.5;
             text-align: center;
         }
 
@@ -455,6 +455,62 @@
             font-family: 'Manrope', sans-serif;
         }
 
+        
+
+        
+
+        .pillars-box {
+           background: #151515;
+            border: 1px solid rgba(67, 67, 67, 0.4);
+            border-radius: 20px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+
+        .pillars-box:hover {
+            background: #202020;
+            transform: translateY(-4px);
+        }
+
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+        .pillars-box:nth-child(1) { grid-column: 1 / 3; }
+        .pillars-box:nth-child(2) { grid-column: 3 / 5; }
+        .pillars-box:nth-child(3) { grid-column: 5 / 7; }
+        .pillars-box:nth-child(4) { grid-column: 2 / 4; }
+        .pillars-box:nth-child(5) { grid-column: 4 / 6; }
+
+        .pillars-number {
+            font-size: 1.7rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            font-family: 'poppins'
+        }
+
+        .pillars-box h4 {
+            font-size: 1.15rem;
+            font-weight: 500;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .pillars-box p {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: rgb(180, 180, 180);
+            line-height: 1.6;
+            margin: 0;
+            font-family: 'Manrope', sans-serif;
+        }
+
         .benefits-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -534,11 +590,12 @@
 
 
         .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+    
+}
 
         .testimonial-card {
             background: #151515;
@@ -553,10 +610,11 @@
         }
 
         .testimonial-number {
-            font-size: 2.25rem;
+            font-size: 1.7rem;
             font-weight: 600;
             color: #ffffff;
             margin-bottom: 0.5rem;
+            font-family: 'poppins'
         }
 
         .testimonial-quote {
@@ -777,6 +835,8 @@
         color: inherit
         }
 
+
+
         @media (max-width: 768px) {
             header {
                 padding: 1.75rem 2rem;
@@ -810,11 +870,30 @@
                 font-size: 0.95rem;
             }
 
-            .steps-grid, .benefits-grid, .testimonials-grid {
+            .pillars-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pillars-box:nth-child(1),
+    .pillars-box:nth-child(2),
+    .pillars-box:nth-child(3),
+    .pillars-box:nth-child(4),
+    .pillars-box:nth-child(5) {
+        grid-column: 1 / -1;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+            .steps-grid, .benefits-grid, .pillars-grid, .testimonials-grid {
                 grid-template-columns: 1fr;
             }
+
+
         }
         
+
                 
         @property --angle {
             syntax: '<angle>';
@@ -1067,9 +1146,9 @@
         <section class="section pillars scroll-fade">
             <div class="section-inner">
                 <h2>The 5 Pillars Of Life:</h2>
-                <div class="steps-grid">
-                <div class="step-box scroll-fade">
-                    <div class="step-number">💸 Wealth</div>
+                <div class="pillars-grid">
+                <div class="pillars-box scroll-fade">
+                    <div class="pillars-number">💸 Wealth</div>
                     <h4>Problem</h4>
                     <p>You have financial goals but your execution is scattered. Some weeks you're locked in, others you're reactive and distracted from the work that actually moves the needle.</p>
                     <br>
@@ -1077,8 +1156,8 @@
                     <h4>Solution</h4>
                     <p>Momentum Method gives you a daily execution system so that building income, saving, and growing your finances become consistent.</p>
                 </div>
-                <div class="step-box scroll-fade">
-                    <div class="step-number">🏋️ Health</div>
+                <div class="pillars-box scroll-fade">
+                    <div class="pillars-number">🏋️ Health</div>
                     <h4>Problem</h4>
                     <p>You know exactly what to eat and how to train. But every few weeks you fall off, restart, and wonder why you can't just stay consistent.</p>
                     <br>
@@ -1086,8 +1165,8 @@
                     <h4>Solution</h4>
                     <p>Momentum method builds the structure that makes showing up automatic, so your health stops being the first thing sacrificed when life gets busy.</p>
                 </div>
-                <div class="step-box scroll-fade">
-                    <div class="step-number">⛳ Recreation</div>
+                <div class="pillars-box scroll-fade">
+                    <div class="pillars-number">⛳ Recreation</div>
                     <h4>Problem</h4>
                     <p>You have skills you want to build and projects you genuinely care about. They've been on the list for months. Maybe years.</p>
                     <br>
@@ -1095,8 +1174,8 @@
                     <h4>Solution</h4>
                     <p>Momentum Method carves out protected, non-negotiable time for the things that make you feel alive. Life isn't ONLY about obligations.</p>
                 </div>
-                <div class="step-box scroll-fade">
-                    <div class="step-number">🧠 Education</div>
+                <div class="pillars-box scroll-fade">
+                    <div class="pillars-number">🧠 Education</div>
                     <h4>Problem</h4>
                     <p>You start courses, books, and learning plans with real intention. Then life gets busy, and it quietly disappears. Then you're left with another half-finished thing and more guilt.</p>
                     <br>
@@ -1104,8 +1183,8 @@
                     <h4>Solution</h4>
                     <p>Momentum Method turns learning into a locked-in daily habit so your knowledge and skills compound consistently. This works whether you're in school, building a career, or teaching yourself something new.</p>
                 </div>
-                <div class="step-box scroll-fade">
-                    <div class="step-number">🤝 Relationships</div>
+                <div class="pillars-box scroll-fade">
+                    <div class="pillars-number">🤝 Relationships</div>
                     <h4>Problem</h4>
                     <p>The people who matter most keep getting whatever energy is left over after everything else drains you. You don't have enough time for your partner or friends.</p>
                     <br>
@@ -1199,7 +1278,6 @@
             <div class="section-inner">
        <h2>This Is Perfect For You If You're:</h2>
                 <br>
-            <div class="section-inner">
              <div class="testimonials-grid">
                 <div class="testimonial-card scroll-fade">
                     <div class="testimonial-number">The Distracted High-Performer</div>
@@ -1226,7 +1304,7 @@
                     <p>Constantly restarting routines instead of building sustainability.</p>
                 </div>
             </div>
-            </div>
+            
             </div>
         </section>
     <br>
