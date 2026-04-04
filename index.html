@@ -465,6 +465,10 @@
             border-radius: 20px;
             padding: 1.5rem;
             transition: all 0.3s ease;
+            max-width: 900px;
+            display: flex;
+            align-items: center;
+            gap: 4rem;
         }
         
 
@@ -475,24 +479,28 @@
 
         .pillars-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: 1fr;
             gap: 1.5rem;
             margin: 2rem 0;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            justify-items: center;
 }
 
-        .pillars-box:nth-child(1) { grid-column: 1 / 3; }
-        .pillars-box:nth-child(2) { grid-column: 3 / 5; }
-        .pillars-box:nth-child(3) { grid-column: 5 / 7; }
-        .pillars-box:nth-child(4) { grid-column: 2 / 4; }
-        .pillars-box:nth-child(5) { grid-column: 4 / 6; }
 
         .pillars-number {
             font-size: 1.7rem;
             font-weight: 600;
             color: #ffffff;
             margin-bottom: 0.5rem;
-            font-family: 'poppins'
+            font-family: 'poppins';
+        }
+        .pillars-number-big {
+            font-size: 3rem;
+            font-weight: 600;
+            color: #ffffff;
+            justify-items: center;
+            align-items: center;
+            margin-left: 2rem;
+            font-family: 'poppins';
         }
 
         .pillars-box h4 {
@@ -724,6 +732,29 @@
     background-position: center;
 }
 
+.underline2{position: relative;}
+        .underline2:before {
+        content: "";
+        width:00%;
+        height: 0em;
+        left: 0;
+        width: 00%;
+        z-index:-10;
+        }
+        .underline2:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    left: 0;
+    bottom: -15px;
+    z-index: -10;
+    background-image: url('underline2.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 20px;
+    background-position: center;
+}
+
         .investment-title u {
             text-decoration-color: #ff0000;
         }
@@ -874,13 +905,62 @@
         grid-template-columns: 1fr;
     }
 
-    .pillars-box:nth-child(1),
-    .pillars-box:nth-child(2),
-    .pillars-box:nth-child(3),
-    .pillars-box:nth-child(4),
-    .pillars-box:nth-child(5) {
-        grid-column: 1 / -1;
+    .pillars-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
     }
+    .pillars-number-big {
+        margin-left: 0;
+        font-size: 2.2rem;
+    }
+
+            .underline{position: relative;}
+        .underline:before {
+        content: "";
+        width:00%;
+        height: 0em;
+        left: 0;
+        width: 00%;
+        z-index:-10;
+        }
+        .underline:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    left: 0;
+    bottom: -15px;
+    z-index: -10;
+    background-image: url('underline.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 20px;
+    background-position: center;
+}
+
+.underline2{position: relative;}
+        .underline2:before {
+        content: "";
+        width:00%;
+        height: 0em;
+        left: 0;
+        width: 00%;
+        z-index:-10;
+        }
+        .underline2:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    left: 0;
+    bottom: -22px;
+    z-index: -10;
+    background-image: url('underline2.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 20px;
+    background-position: center;
+}
+
 
     .testimonials-grid {
         grid-template-columns: 1fr;
@@ -1148,49 +1228,59 @@
                 <h2>The 5 Pillars Of Life:</h2>
                 <div class="pillars-grid">
                 <div class="pillars-box scroll-fade">
-                    <div class="pillars-number">💸 Wealth</div>
+                    <div class="pillars-number-big"><span class="underline2">💎 Wealth</span></div>
+                    <div>
                     <h4>Problem</h4>
                     <p>You have financial goals but your execution is scattered. Some weeks you're locked in, others you're reactive and distracted from the work that actually moves the needle.</p>
                     <br>
                     <br>
                     <h4>Solution</h4>
                     <p>Momentum Method gives you a daily execution system so that building income, saving, and growing your finances become consistent.</p>
-                </div>
+                    </div>
+                    </div>
                 <div class="pillars-box scroll-fade">
-                    <div class="pillars-number">🏋️ Health</div>
+                    <div class="pillars-number-big"><span class="underline2">🥕 Health</span></div>
+                    <div>
                     <h4>Problem</h4>
                     <p>You know exactly what to eat and how to train. But every few weeks you fall off, restart, and wonder why you can't just stay consistent.</p>
                     <br>
                     <br>
                     <h4>Solution</h4>
                     <p>Momentum method builds the structure that makes showing up automatic, so your health stops being the first thing sacrificed when life gets busy.</p>
-                </div>
+                    </div>
+                    </div>
                 <div class="pillars-box scroll-fade">
-                    <div class="pillars-number">⛳ Recreation</div>
+                    <div class="pillars-number-big"><span class="underline2">🎳 Recreation</span></div>
+                    <div>
                     <h4>Problem</h4>
                     <p>You have skills you want to build and projects you genuinely care about. They've been on the list for months. Maybe years.</p>
                     <br>
                     <br>
                     <h4>Solution</h4>
                     <p>Momentum Method carves out protected, non-negotiable time for the things that make you feel alive. Life isn't ONLY about obligations.</p>
+                    </div>
                 </div>
                 <div class="pillars-box scroll-fade">
-                    <div class="pillars-number">🧠 Education</div>
+                    <div class="pillars-number-big"><span class="underline2">📚 Education</span></div>
+                    <div>
                     <h4>Problem</h4>
                     <p>You start courses, books, and learning plans with real intention. Then life gets busy, and it quietly disappears. Then you're left with another half-finished thing and more guilt.</p>
                     <br>
                     <br>
                     <h4>Solution</h4>
                     <p>Momentum Method turns learning into a locked-in daily habit so your knowledge and skills compound consistently. This works whether you're in school, building a career, or teaching yourself something new.</p>
+                    </div>
                 </div>
                 <div class="pillars-box scroll-fade">
-                    <div class="pillars-number">🤝 Relationships</div>
+                    <div class="pillars-number-big"><span class="underline2">💖 Relationships</span></div>
+                    <div>
                     <h4>Problem</h4>
                     <p>The people who matter most keep getting whatever energy is left over after everything else drains you. You don't have enough time for your partner or friends.</p>
                     <br>
                     <br>
                     <h4>Solution</h4>
                     <p>Momentum Method helps you design your time intentionally so your most important relationships get your presence and your best energy, not your burnout.</p>
+                    </div>
                 </div>
                 
             </div>
